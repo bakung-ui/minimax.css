@@ -1,0 +1,34 @@
+{
+  "name": "minimax.css",
+  "description": "A minimal CSS library with variables and default dark light theme colors",
+  "main": "minimax.css",
+  "style": "minimax.css",
+  "files": [
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "LICENSE.md",
+    "README.md",
+    "css/_minimax.css",
+    "css/_variables.css",
+    "dist/_minimax.min.css",
+    "dist/minimax.css",
+    "dist/minimax.min.css"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/bakung-ui/minimax.css",
+  "bugs": "https://github.com/bakung-ui/minimax.css/issues",
+  "homepage": "https://bakung-ui.github.io/minimax.css",
+  "devDependencies": {
+    "cssnano": "^7.1.2",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-discard-comments": "^7.0.5",
+    "postcss-import": "^16.1.1"
+  },
+  "scripts": {
+    "postcss": "npm run postcss:_minimaxMinify && npm run postcss:combine && npm run postcss:minify --importDep noimport",
+    "postcss:_minimaxMinify": "postcss css/_minimax.css > dist/_minimax.min.css --use cssnano --no-map",
+    "postcss:combine": "postcss css/_minimax.css -o dist/minimax.css --use postcss-import --use postcss-discard-comments --no-map",
+    "postcss:minify": "postcss dist/minimax.css > dist/minimax.min.css --no-map"
+  }
+}
