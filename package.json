@@ -1,6 +1,6 @@
 {
   "name": "minimax.css",
-  "description": "A minimal CSS library with variables and default dark light theme colors",
+  "description": "A reset CSS library with variables",
   "main": "minimax.css",
   "style": "minimax.css",
   "files": [
