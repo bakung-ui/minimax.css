@@ -33,5 +33,9 @@
     "postcss:_minimaxMinify": "postcss css/_minimax.css > dist/_minimax.min.css --use cssnano --no-map",
     "postcss:combine": "postcss css/_minimax.css -o dist/minimax.css --use postcss-import --use postcss-discard-comments --no-map",
     "postcss:minify": "postcss dist/minimax.css > dist/minimax.min.css --no-map"
+  },
+  "engines": {
+    "node": ">=v22.16.0",
+    "npm": ">=10.9.2"
   }
 }
