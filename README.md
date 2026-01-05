@@ -29,7 +29,7 @@ See https://yarnpkg.com/en/package/minimax.css
 
 **Download**
 
-See https://bakung-ui.github.io/minimax.css/latest/minimax.css
+See https://bakung-ui.github.io/minimax.css/latest/minimax.css, https://bakung-ui.github.io/minimax.css/latest/minimax.min.css
 
 
 ## What does it do?
