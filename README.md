@@ -2,6 +2,37 @@
 
 > A CSS resets
 
+[![npm][npm-image]][npm-url] [![yarn][npm-image]][classic-yarn-url] 
+[![changelog][changelog-image]][changelog-url]
+
+[npm-url]: https://www.npmjs.com/package/@bakung-ui/minimax.css
+[classic-yarn-url]: https://classic.yarnpkg.com/en/package/@bakung-ui/minimax.css
+[yarn-url]: https://yarnpkg.com/package?name=@bakung-ui/minimax.css
+[changelog-url]: CHANGELOG.md
+
+
+**INSTALL**
+
+```sh
+npm i @bakung-ui/minimax.css
+```
+
+or
+
+```sh
+yarn add @bakung-ui/minimax.css
+```
+
+**CDN**
+https://app.unpkg.com/@bakung-ui/minimax.css@26.1.0
+https://cdn.jsdelivr.net/npm/@bakung-ui/minimax.css@26.1.0/
+https://bundle.run/@bakung-ui/minimax.css@26.1.0
+
+
+**Download**
+https://github.com/bakung-ui/minimax.css/releases/latest/
+
+
 **REQUIREMENTS**
 
 ```html
@@ -16,21 +47,6 @@
     </body>
 </html>
 ```
-        
-**NPM**
-
-```sh
-npm install --save minimax.css
-```
-
-**CDN**
-
-See https://yarnpkg.com/en/package/minimax.css
-
-**Download**
-
-See https://bakung-ui.github.io/minimax.css/latest/minimax.css, https://bakung-ui.github.io/minimax.css/latest/minimax.min.css
-
 
 ## What does it do?
 
@@ -43,13 +59,9 @@ See https://bakung-ui.github.io/minimax.css/latest/minimax.css, https://bakung-u
 
 ## Browser support
 
-* Chrome
-* Edge
-* Firefox ESR+
-* Internet Explorer 10+
-* Safari 8+
-* Opera
-* Vivaldi
+* Chromium*
+* Firefox
+* Safari
 
 
 ## Extended details and known issues
@@ -101,8 +113,3 @@ showing past searches).
 
 Please read the [contribution guidelines](CONTRIBUTING.md) in order to make the
 contribution process easy and effective for everyone involved.
-
-
-[changelog-url]: CHANGELOG.md
-[license-url]: LICENSE.md
-[npm-url]: https://www.npmjs.com/package/@bakung-ui/minimax.css
