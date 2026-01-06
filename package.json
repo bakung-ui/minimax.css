@@ -1,11 +1,14 @@
 {
-  "name": "bakung-ui/minimax.css",
+  "name": "@bakung-ui/minimax.css",
   "description": "A reset CSS library with variables",
-  "version": "26.01",
-  "keywords": ["css", "css-library", "reset-css", "css-theme"],
+  "version": "26.1.0",
+  "keywords": [
+    "css",
+    "css-library",
+    "reset-css",
+    "css-theme"
+  ],
   "author": "Tria Warman @triawarman",
-  "main": "minimax.css",
-  "style": "minimax.css",
   "files": [
     "CHANGELOG.md",
     "CONTRIBUTING.md",
@@ -19,7 +22,10 @@
   ],
   "license": "MIT",
   "homepage": "https://bakung-ui.github.io/minimax.css",
-  "repository": "https://github.com/bakung-ui/minimax.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bakung-ui/minimax.css.git"
+  },
   "bugs": "https://github.com/bakung-ui/minimax.css/issues",
   "devDependencies": {
     "cssnano": "^7.1.2",
