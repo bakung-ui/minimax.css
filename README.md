@@ -105,4 +105,4 @@ contribution process easy and effective for everyone involved.
 
 [changelog-url]: CHANGELOG.md
 [license-url]: LICENSE.md
-[npm-url]: https://www.npmjs.com/package/minimax.css
+[npm-url]: https://www.npmjs.com/package/@bakung-ui/minimax.css
