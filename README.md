@@ -1,9 +1,9 @@
 # minimax.css
 
-> A CSS resets
+> A reset CSS library with variables
 
-[![npm][npm-image]][npm-url] [![yarn][npm-image]][classic-yarn-url] 
-[![changelog][changelog-image]][changelog-url]
+[![npm]<img width="960" height="374" alt="image" src="https://github.com/user-attachments/assets/3f30b3fa-049a-47e0-a288-241f623c7325" />][npm-url] [![yarn]<img width="960" height="431" alt="image" src="https://github.com/user-attachments/assets/66d52d95-465e-4d3e-a0f5-56922755507b" />][classic-yarn-url] 
+[![changelog]][changelog-url]
 
 [npm-url]: https://www.npmjs.com/package/@bakung-ui/minimax.css
 [classic-yarn-url]: https://classic.yarnpkg.com/en/package/@bakung-ui/minimax.css
@@ -24,12 +24,14 @@ yarn add @bakung-ui/minimax.css
 ```
 
 **CDN**
+
 https://app.unpkg.com/@bakung-ui/minimax.css@26.1.0
 https://cdn.jsdelivr.net/npm/@bakung-ui/minimax.css@26.1.0/
 https://bundle.run/@bakung-ui/minimax.css@26.1.0
 
 
 **Download**
+
 https://github.com/bakung-ui/minimax.css/releases/latest/
 
 
