@@ -2,6 +2,8 @@
 
 > A reset CSS library with variables
 
+Minimax.css versioning is based on the year and month. Version 26.1.0 was launched in January 2026; all future releases, including minor updates, will follow this `year/month` format, for ex. `27.3.0` is release in March 2027.
+
 
 **INSTALL**
 
