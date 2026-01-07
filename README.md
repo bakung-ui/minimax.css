@@ -46,11 +46,23 @@ https://bundle.run/@bakung-ui/minimax.css@26.1.0
 </html>
 ```
 
+
 **CUSTOMIZE**
 
-Feel free to customize files in the css/* folder, after making changes, run command `npm run postcss` to transforming your changes, check your new update files in dist folder.
+```
+[MAIN FOLDER]
+ |  css                     // Files in here are editable
+ |    |  _variables.css     // Especially this one
+ |    |  _minimax.css       // You can also edit this, though only to a limited extent
+ |  dist                    
+ |    |  _minimax.min.css
+ |    |  minimax.css
+ |    |  minimax.min.css
+```
 
-If you change the font in the CSS file, you must also update it in the HTML head.
+Feel free to customize files in the css/* folder especially _variables.css file, after making changes, run command `npm run build` to build your changes, check your new build files in dist folder.
+
+When changing the `font-family` in your CSS, ensure you also update the corresponding font link in the HTML <head>.
 
 
 ## What does it do?
