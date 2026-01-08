@@ -91,6 +91,8 @@ Additional detail and explanation of the esoteric parts of minimax.css.
 
 minimax.css use necolas/normalize.css, you can think this library is another variation with different flavor and additional toppings.
 
+bakung-ui/minimax.css is a standalone 'Reboot' stylesheet formerly bundled with bakung-ui/bakung.css. It done for simple blogs that don’t need a massive UI kit but want to make the most of default HTML elements.
+
 #### `pre, code, kbd, samp`
 
 The `font-family: monospace, monospace` hack fixes the inheritance and scaling
