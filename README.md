@@ -64,7 +64,7 @@ https://bundle.run/@bakung-ui/minimax.css@26.1.0
 
 Feel free to customize files in the css/* folder especially _variables.css file, after making changes, run command `npm run build` to build your changes, check your new build files in dist folder.
 
-When changing the `font-family` in your CSS, ensure you also update the corresponding font link in the HTML <head>.
+When changing the `font-family` in your CSS, ensure you also update the corresponding font link in the HTML `<head>`.
 
 
 ## What does it do?

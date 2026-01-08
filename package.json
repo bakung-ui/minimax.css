@@ -35,10 +35,10 @@
     "postcss-import": "^16.1.1"
   },
   "scripts": {
-    "postcss": "npm run postcss:_minimaxMinify && npm run postcss:combine && npm run postcss:minify --importDep noimport",
-    "postcss:_minimaxMinify": "postcss css/_minimax.css > dist/_minimax.min.css --use cssnano --no-map",
-    "postcss:combine": "postcss css/_minimax.css -o dist/minimax.css --use postcss-import --use postcss-discard-comments --no-map",
-    "postcss:minify": "postcss dist/minimax.css > dist/minimax.min.css --no-map"
+    "build:_minimaxMinify": "postcss css/_minimax.css > dist/_minimax.min.css --use cssnano --no-map",
+    "build:combine": "postcss css/_minimax.css -o dist/minimax.css --use postcss-import --use postcss-discard-comments --no-map",
+    "build:minify": "postcss dist/minimax.css > dist/minimax.min.css --no-map",
+    "build": "npm run build:_minimaxMinify && npm run build:combine && npm run build:minify --importDep noimport"
   },
   "engines": {
     "node": ">=v22.16.0",
