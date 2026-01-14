@@ -3,7 +3,7 @@
 
 ### 26.01.3
 
-* Update changelog
+* Update changelog to sync npmjs version
 
 ### 26.01.2
 
