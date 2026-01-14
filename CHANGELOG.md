@@ -1,6 +1,10 @@
 # Changes to minimax.css
 
 
+### 26.01.3
+
+* Update changelog
+
 ### 26.01.2
 
 * Update img property
