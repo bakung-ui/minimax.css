@@ -34,7 +34,11 @@
     
     --focus-outline:0.25rem solid var(--transparent-color);
     --focus--box-shadow:0 0 0 0.25rem var(--transparent-color);
-
+    
+    --elements-block-level-space:1rem;
+    
+    --boundary--border:1px solid var(--border-color-boundary);
+    
     --h--font-family:Montserrat, sans-serif;
     --h--font-weight:500;
     --h--line-height:1;
@@ -55,7 +59,7 @@
     
     --pre--color:var(--font-color-alt-1);
     --pre--background:var(--bg-color-text);
-    --pre--border:1px solid var(--border-color-boundary);
+    --pre--border:var(--boundary--border);
     --cks--font-family:"Sometype Mono", monospace, monospace;
     --cks--font-size:1.125rem;
     --cks--font-weight:400;
@@ -200,7 +204,7 @@
     }
 
     fieldset{
-        border:1px solid var(--border-color-boundary);
+        border:var(--boundary--border);
         padding:0.5rem;
     
         :where(&) > label{
@@ -237,7 +241,7 @@
     }
 
     hr{
-        border:1px solid var(--border-color-boundary);
+        border:var(--boundary--border);
         border-width:0 0 1px;
         box-sizing:content-box;
 
@@ -337,6 +341,22 @@
 
     img{
         border:none;
+        
+        max-height:90vh;
+        max-width:90vw;
+        
+        display:inline-block;
+    }
+    
+    figure{
+        :where(&) img{
+            margin:auto auto 0.5rem;
+            line-height:1;
+        }
+    }
+    
+    figcaption{
+        font-size:0.875em;
     }
     
     button,
@@ -496,10 +516,6 @@
         vertical-align:top;
     }
 
-    img{
-        border:0;
-    }
-
     svg:not(:root){
         overflow:hidden;
     }
@@ -650,7 +666,7 @@
             nav
         )
     ){
-        margin-bottom:1rem;
+        margin-bottom:var(--elements-block-level-space);
     }
     input,
     select,

@@ -2,7 +2,9 @@
 
 > A reset CSS library with variables
 
-Minimax.css versioning is based on the year and month. Version 26.1.0 was launched in January 2026; all future releases, including minor updates, will follow this `year/month` format, for ex. `27.3.0` is release in March 2027.
+@bakung-ui/minimax.css is a standalone "Reboot" stylesheet formerly bundled with @bakung-ui/bakung.css. I separated it specifically for simple blogs that don’t need a massive UI kit but still want to make the most of default HTML elements.
+
+Our versioning is based on the year and month. Version 26.1.0 was launched in January 2026; all future releases, including minor updates, will follow this `year/month` format, for ex. `27.3.0` is release in March 2027.
 
 
 **INSTALL**
@@ -24,9 +26,9 @@ https://github.com/bakung-ui/minimax.css/releases/latest/
 
 **CDN**
 
-https://app.unpkg.com/@bakung-ui/minimax.css@26.1.0
-https://cdn.jsdelivr.net/npm/@bakung-ui/minimax.css@26.1.0/
-https://bundle.run/@bakung-ui/minimax.css@26.1.0
+https://app.unpkg.com/@bakung-ui/minimax.css@latest/
+
+https://cdn.jsdelivr.net/npm/@bakung-ui/minimax.css@latest/
 
 
 **REQUIREMENTS**
@@ -53,16 +55,16 @@ https://bundle.run/@bakung-ui/minimax.css@26.1.0
 
 ```
 [MAIN FOLDER]
- |  css                     // Files in here are editable
- |    |  _variables.css     // Especially this one
- |    |  _minimax.css       // You can also edit this, though only to a limited extent
- |  dist                    
- |    |  _minimax.min.css
- |    |  minimax.css
- |    |  minimax.min.css
+ ├  css                     // Files in here are editable
+ |    ├  _variables.css     // Especially this one
+ |    └  _minimax.css       // You can also edit this, though only to a limited extent
+ └  dist                    
+      ├  _minimax.min.css   // without variables
+      ├  minimax.css        
+      └  minimax.min.css    // you shall use this for production
 ```
 
-Feel free to customize files in the css/* folder especially _variables.css file, after making changes, run command `npm run build` to build your changes, check your new build files in dist folder.
+Feel free to customize files in the css folder especially _variables.css file, after making changes, run command `npm run build` to build your changes, check your new build files in dist folder.
 
 When changing the `font-family` in your CSS, ensure you also update the corresponding font link in the HTML `<head>`.
 
@@ -90,8 +92,6 @@ Additional detail and explanation of the esoteric parts of minimax.css.
 #### origin
 
 minimax.css use necolas/normalize.css, you can think this library is another variation with different flavor and additional toppings.
-
-bakung-ui/minimax.css is a standalone 'Reboot' stylesheet formerly bundled with bakung-ui/bakung.css. It done for simple blogs that don’t need a massive UI kit but want to make the most of default HTML elements.
 
 #### `pre, code, kbd, samp`
 

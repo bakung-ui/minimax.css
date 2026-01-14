@@ -80,7 +80,11 @@
     
     --focus-outline: 0.25rem solid var(--transparent-color);
     --focus--box-shadow: 0 0 0 0.25rem var(--transparent-color);
-
+    
+    --elements-block-level-space: 1rem;
+    
+    --boundary--border: 1px solid var(--border-color-boundary);
+    
     --h--font-family: Montserrat, sans-serif;
     --h--font-weight: 500; /* 100 - 900 */
     --h--line-height: 1;
@@ -101,7 +105,7 @@
     
     --pre--color: var(--font-color-alt-1);
     --pre--background: var(--bg-color-text);
-    --pre--border: 1px solid var(--border-color-boundary);
+    --pre--border: var(--boundary--border);
 
     /*code kbd samp*/
     --cks--font-family: "Sometype Mono", monospace, monospace;

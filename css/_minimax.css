@@ -103,7 +103,7 @@
     }
 
     fieldset {
-        border: 1px solid var(--border-color-boundary);
+        border: var(--boundary--border);
         padding: 0.5rem;
     
         :where(&) > label {
@@ -140,7 +140,7 @@
     }
 
     hr {
-        border: 1px solid var(--border-color-boundary);
+        border: var(--boundary--border);
         border-width: 0 0 1px;
         box-sizing: content-box;
 
@@ -240,6 +240,22 @@
 
     img {
         border: none;
+        
+        max-height: 90vh;
+        max-width: 90vw;
+        
+        display: inline-block;
+    }
+    
+    figure {
+        :where(&) img {
+            margin: auto auto 0.5rem;
+            line-height: 1;
+        }
+    }
+    
+    figcaption {
+        font-size: 0.875em;
     }
     
     button,
@@ -397,10 +413,6 @@
     textarea {
         overflow: auto;
         vertical-align: top;
-    }
-
-    img {
-        border: 0;
     }
 
     svg:not(:root) {
@@ -566,7 +578,7 @@
             nav
         )
     ) {
-        margin-bottom: 1rem;
+        margin-bottom: var(--elements-block-level-space);
     }
 
     /*Fix outline for :focus-visible*/
