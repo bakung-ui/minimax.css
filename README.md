@@ -56,10 +56,11 @@ https://cdn.jsdelivr.net/npm/@bakung-ui/minimax.css@latest/
 ```
 [MAIN FOLDER]
  ├  css                     // Files in here are editable
- |    ├  _variables.css     // Especially this one
- |    └  _minimax.css       // You can also edit this, though only to a limited extent
+ |    ├  _variables.css     // Especially this one       
+ |    ├  _styles.css        // You can also edit this, though only to a limited extent
+ |    └  index.css          // Entry file to merge _variables.css with _styles.css
  └  dist                    
-      ├  _minimax.min.css   // without variables
+      ├  _minimax.min.css   // without _variables.css
       ├  minimax.css        
       └  minimax.min.css    // you shall use this for production
 ```

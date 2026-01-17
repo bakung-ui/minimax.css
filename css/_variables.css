@@ -1,155 +1,154 @@
 :root {
-    /*
-    If font is specified as a shorthand for several font-related properties, then:
-        - it must include values for:
-            <font-size>
-            <font-family>
-            
-        - it may optionally include values for:
-            <font-style>
-            <font-variant>
-            <font-weight>
-            <font-stretch>
-            <line-height>
-
-        - font-style, font-variant and font-weight must precede font-size.
-
-        - font-variant may only specify the values defined in CSS 2.1, that is normal and small-caps.
-
-        - font-stretch may only be a single keyword value.
-
-        - line-height must immediately follow font-size, preceded by "/", like this: 16px/3.
-
-        - font-family must be the last value specified.
+  /*
+  If font is specified as a shorthand for several font-related properties, then:
+    - it must include values for:
+      <font-size>
+      <font-family>
         
-    font = [ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-stretch-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ]
-    
-    // font-size font-family
-    font: 1.2em "Fira Sans", sans-serif;
+    - it may optionally include values for:
+      <font-style>
+      <font-variant>
+      <font-weight>
+      <font-stretch>
+      <line-height>
 
-    // font-size/line-height font-family
-    font: 1.2em/2 "Fira Sans", sans-serif;
+    - font-style, font-variant and font-weight must precede font-size.
 
-    // font-style font-weight font-size font-family
-    font: italic bold 1.2em "Fira Sans", sans-serif;
+    - font-variant may only specify the values defined in CSS 2.1, that is normal and small-caps.
 
-    // font-stretch font-variant font-size font-family 
-    font: ultra-condensed small-caps 1.2em "Fira Sans", sans-serif;
-    */
-    --font-style: normal;
-    --font-variant: normal;
-    --font-weight: 300; /* 300 - 400 */
-    --font-stretch: normal;
-    --font-size: 16px;
-    --line-height: 1.5;
-    --font-family: Lato, "Helvetica Neue", sans-serif;
-    --font: var(--font-style) var(--font-variant) var(--font-weight)
-        var(--font-stretch) var(--font-size) / var(--line-height)
-        var(--font-family);
-    --letter-spacing: 0.06em;
-    
-    --accent-color: oklch(0.59 0.11 281.84);
-    
-    --font-color: oklch(0.36 0.02 285.26);
-    --font-color: oklch(0 0 0);
-    /* h*, pre, optgroup, th */
-    --font-color-alt-1: oklch(0.44 0.02 284.16);
-    /* blockquote footer */
-    --font-color-alt-2: oklch(0.6 0.02 285.26);
-    
-    --bg-color: oklch(0.98 0 0);
-    /* kbd */
-    --bg-color-text-alt-1: oklch(0.36 0.02 285.26);
-    /* --pre--background, --code--background */
-    --bg-color-text: oklch(0.95 0.01 285.37);
-    --bg-color-clickable: oklch(0.96 0.01 285.53);
-    
-    /* --btn--border-color */
-    --border-color-control: oklch(0.75 0.02 285.18);
-    /* --blockquote--border-color, --pre--border, --kbd_-kbd--border */
-    --border-color-boundary: oklch(0.82 0.02 285.18);
-    
-    /* shadow, focus */
-    --transparent-color: oklch(from var(--accent-color) l c h / .15);
-    
-    --href--color: oklch(0.56 0.22 276.32);
-    --href--visited-color: oklch(0.42 0.13 279.17);
-    
-    --shadow-float: 0 3px 10px 0 var(--transparent-color);
-    --shadow-clickable: 0 2px 2px 0 var(--transparent-color);
-    
-    --focus-outline: 0.25rem solid var(--transparent-color);
-    --focus--box-shadow: 0 0 0 0.25rem var(--transparent-color);
-    
-    --elements-block-level-space: 1rem;
-    
-    --boundary--border: 1px solid var(--border-color-boundary);
-    
-    --h--font-family: Montserrat, sans-serif;
-    --h--font-weight: 500; /* 100 - 900 */
-    --h--line-height: 1;
-    --h--letter-spacing: -0.016em;
-    
-    --h--color: var(--font-color-alt-1);
-    
-    --backdrop--bg-color: var(--transparent-color);
-    
-    --dialog--height: auto;
-    --dialog--width: auto;
+    - font-stretch may only be a single keyword value.
 
-    --blockquote--border-width: 0 0 0 4px;
-    --blockquote--border-style: solid;
-    --blockquote--border-color: var(--border-color-boundary);
-    --blockquote_--footer--color: var(--font-color-alt-2);
-    --blockquote_--footer--margin: 1rem 0 0;
-    
-    --pre--color: var(--font-color-alt-1);
-    --pre--background: var(--bg-color-text);
-    --pre--border: var(--boundary--border);
+    - line-height must immediately follow font-size, preceded by "/", like this: 16px/3.
 
-    /*code kbd samp*/
-    --cks--font-family: "Sometype Mono", monospace, monospace;
-    --cks--font-size: 1.125rem;
-    --cks--font-weight: 400; /* 400 - 700 */
+    - font-family must be the last value specified.
+      
+  font = [ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-stretch-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ]
 
-    --code--color: var(--font-color);
-    --code--background: oklch(from var(--pre--background) .9 c h / .8);
+  // font-size font-family
+  font: 1.2em "Fira Sans", sans-serif;
 
-    --kbd--color: white;
-    --kbd--background: var(--bg-color-text-alt-1);
-    --kbd--border-radius: 3px;
-    
-    --kbd_-kbd--font-weight: 400;
-    --kbd_-kbd--color: var(--font-color);
-    --kbd_-kbd--border: solid var(--border-color-boundary);
-    --kbd_-kbd--border-width: 1px 2px 3px 1px;
-    --kbd_-kbd--padding: 0 0.5rem 0.25rem .25rem;
+  // font-size/line-height font-family
+  font: 1.2em/2 "Fira Sans", sans-serif;
 
-    --controls--font-color: var(--font-color);
-    --controls--border: 1px solid var(--border-color-control);
-    --controls--min-height: 1.75rem;
-    --controls--padding: 0.125em 0.25em 0.25em;
+  // font-style font-weight font-size font-family
+  font: italic bold 1.2em "Fira Sans", sans-serif;
 
-    --input--bg-color: white;
-    
-    --btn--font-weight: 400;
-    --btn--font-size: var(--font-size);
-    --btn--line-height: 1.5;
-    --btn--font: normal var(--btn--font-weight) var(--btn--font-size) / var(--btn--line-height)
-        var(--font-family);
-    --btn--font-color: var(--font-color);
-    --btn--bg-color: var(--bg-color-clickable);
-    --btn--paddings: 0.2lh 1.5em;
-    --btn--paddings: .2lh .75lh .25lh;
-    --btn--borders-width: 1px;
-    --btn--border-style: solid;
-    --btn--border-color: var(--border-color-control);
-    --btn--borders-radius: 0.375em;
-    --btn--borders-radius: 0.25em;
-    --btn--shadow: var(--shadow-clickable);
+  // font-stretch font-variant font-size font-family 
+  font: ultra-condensed small-caps 1.2em "Fira Sans", sans-serif;
+  */
+  --font-style: normal;
+  --font-variant: normal;
+  --font-weight: 300; /* 300 - 400 */
+  --font-stretch: normal;
+  --font-size: 16px;
+  --line-height: 1.5;
+  --font-family: Lato, "Helvetica Neue", sans-serif;
+  --font: var(--font-style) var(--font-variant) var(--font-weight)
+    var(--font-stretch) var(--font-size) / var(--line-height)
+    var(--font-family);
+  --letter-spacing: 0.06em;
+  
+  --accent-color: oklch(0.59 0.11 281.84);
+  
+  --font-color: oklch(0.36 0.02 285.26);
+  --font-color: oklch(0 0 0);
+  /* h*, pre, optgroup, th */
+  --font-color-alt-1: oklch(0.44 0.02 284.16);
+  /* blockquote footer */
+  --font-color-alt-2: oklch(0.6 0.02 285.26);
+  
+  --bg-color: oklch(0.98 0 0);
+  /* kbd */
+  --bg-color-text-alt-1: oklch(0.36 0.02 285.26);
+  /* --pre--background, --code--background */
+  --bg-color-text: oklch(0.95 0.01 285.37);
+  --bg-color-clickable: oklch(0.96 0.01 285.53);
+  
+  /* --btn--border-color */
+  --border-color-control: oklch(0.75 0.02 285.18);
+  /* --blockquote--border-color, --pre--border, --kbd_-kbd--border */
+  --border-color-boundary: oklch(0.82 0.02 285.18);
+  
+  /* shadow, focus */
+  --transparent-color: oklch(from var(--accent-color) l c h / .15);
+  
+  --href--color: oklch(0.56 0.22 276.32);
+  --href--visited-color: oklch(0.42 0.13 279.17);
+  
+  --shadow-float: 0 3px 10px 0 var(--transparent-color);
+  --shadow-clickable: 0 2px 2px 0 var(--transparent-color);
+  
+  --focus-outline: 0.25rem solid var(--transparent-color);
+  --focus--box-shadow: 0 0 0 0.25rem var(--transparent-color);
+  
+  --elements-block-level-space: 1rem;
+  
+  --boundary--border: 1px solid var(--border-color-boundary);
+  
+  --h--font-family: Montserrat, sans-serif;
+  --h--font-weight: 500; /* 100 - 900 */
+  --h--line-height: 1;
+  --h--letter-spacing: -0.016em;
+  
+  --h--color: var(--font-color-alt-1);
+  
+  --backdrop--bg-color: var(--transparent-color);
+  
+  --dialog--height: auto;
+  --dialog--width: auto;
 
-    --moz-input--paddings: 0.125em 0.25em 0.25em;
-    --moz-input--select-paddings: 0.125em 0.25em 0.25em;
-    --moz-btn-paddings: 0.2lh 1.5em;
-    --moz-btn-paddings: .2lh .75lh .25lh;
+  --blockquote--border-width: 0 0 0 4px;
+  --blockquote--border-style: solid;
+  --blockquote--border-color: var(--border-color-boundary);
+  --blockquote_--footer--color: var(--font-color-alt-2);
+  --blockquote_--footer--margin: 1rem 0 0;
+  
+  --pre--color: var(--font-color-alt-1);
+  --pre--background: var(--bg-color-text);
+  --pre--border: var(--boundary--border);
+
+  /*code kbd samp*/
+  --cks--font-family: "Sometype Mono", monospace, monospace;
+  --cks--font-size: 1.125rem;
+  --cks--font-weight: 400; /* 400 - 700 */
+
+  --code--color: var(--font-color);
+  --code--background: oklch(from var(--pre--background) .9 c h / .8);
+
+  --kbd--color: white;
+  --kbd--background: var(--bg-color-text-alt-1);
+  --kbd--border-radius: 3px;
+  
+  --kbd_-kbd--font-weight: 400;
+  --kbd_-kbd--color: var(--font-color);
+  --kbd_-kbd--border: solid var(--border-color-boundary);
+  --kbd_-kbd--border-width: 1px 2px 3px 1px;
+  --kbd_-kbd--padding: 0 0.5rem 0.25rem .25rem;
+
+  --controls--font-color: var(--font-color);
+  --controls--border: 1px solid var(--border-color-control);
+  --controls--min-height: 1.75rem;
+  --controls--padding: 0.125em 0.25em 0.25em;
+
+  --input--bg-color: white;
+  
+  --btn--font-weight: 400;
+  --btn--font-size: var(--font-size);
+  --btn--line-height: 1.5;
+  --btn--font: normal var(--btn--font-weight) var(--btn--font-size) / var(--btn--line-height) var(--font-family);
+  --btn--font-color: var(--font-color);
+  --btn--bg-color: var(--bg-color-clickable);
+  --btn--paddings: 0.2lh 1.5em;
+  --btn--paddings: .2lh .75lh .25lh;
+  --btn--borders-width: 1px;
+  --btn--border-style: solid;
+  --btn--border-color: var(--border-color-control);
+  --btn--borders-radius: 0.375em;
+  --btn--borders-radius: 0.25em;
+  --btn--shadow: var(--shadow-clickable);
+
+  --moz-input--paddings: 0.125em 0.25em 0.25em;
+  --moz-input--select-paddings: 0.125em 0.25em 0.25em;
+  --moz-btn-paddings: 0.2lh 1.5em;
+  --moz-btn-paddings: .2lh .75lh .25lh;
 }

@@ -1,9 +1,18 @@
 # Changes to minimax.css
 
+### 
+
+* Add css/index.css file to act as entry file for merge css files.
+
+* Update postcss.config.js.
+
+* Add file cssnano.config.js.
+
+* Update package.json for build scripts and add entry point for unpkg.
 
 ### 26.01.3
 
-* Update changelog to sync npmjs version
+* Update changelog
 
 ### 26.01.2
 

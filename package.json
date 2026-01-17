@@ -10,6 +10,10 @@
   ],
   "author": "Tria Warman @triawarman",
   "style": "dist/minimax.min.css",
+  "exports": {
+    "unpkg": "./dist/minimax.min.css",
+    "style": "./dist/minimax.min.css"
+  },
   "files": [
     "css",
     "dist",
@@ -33,10 +37,10 @@
     "postcss-import": "^16.1.1"
   },
   "scripts": {
-    "build:_minimaxMinify": "postcss css/_minimax.css > dist/_minimax.min.css --use cssnano --no-map",
-    "build:combine": "postcss css/_minimax.css -o dist/minimax.css --use postcss-import --use postcss-discard-comments --no-map",
+    "build:_minimaxMinify": "postcss css/_styles.css > dist/_minimax.min.css --use postcss-import --use cssnano --no-map",
+    "build:combine": "postcss css/index.css -o dist/minimax.css --use postcss-import --use cssnano --no-map --env build:combine",
     "build:minify": "postcss dist/minimax.css > dist/minimax.min.css --no-map",
-    "build": "npm run build:_minimaxMinify && npm run build:combine && npm run build:minify --importDep noimport"
+    "build": "npm run build:_minimaxMinify && npm run build:combine && npm run build:minify"
   },
   "engines": {
     "node": ">=v22.16.0",

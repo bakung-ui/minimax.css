@@ -1,0 +1,15 @@
+/**
+ * 
+ * Entry file to merge css files.
+ * 
+ * // Import the entire package's main file (if defined in package.json style/main fields)
+ * @import "my-npm-package";
+ *
+ * // Import a specific file from the package
+ * @import "my-npm-package/path/to/specific/file.css";
+ * 
+ */
+
+@import "./_variables.css";
+
+@import "./_styles.css";
