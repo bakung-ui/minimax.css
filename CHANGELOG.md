@@ -2,6 +2,10 @@
 
 ### 
 
+* Add property scroll-behavior to html element.
+
+* Named css/_minimax.css into css/_styles.css.
+
 * Add css/index.css file to act as entry file for merge css files.
 
 * Update postcss.config.js.
@@ -9,6 +13,8 @@
 * Add file cssnano.config.js.
 
 * Update package.json for build scripts and add entry point for unpkg.
+
+* Generate more variations distribution files.
 
 ### 26.01.3
 

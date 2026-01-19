@@ -36,17 +36,17 @@ https://cdn.jsdelivr.net/npm/@bakung-ui/minimax.css@latest/
 ```html
 <!DOCTYPE html>
 <html lang="">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@100..900&family=Sometype+Mono:wght@400..700&display=swap" rel="stylesheet">
-        
-        <!--
-            Put your css files link here
-        -->
-    </head>
-    <body>
-    </body>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@100..900&family=Sometype+Mono:wght@400..700&display=swap" rel="stylesheet">
+    
+    <!--
+      Put your css files link here
+    -->
+  </head>
+  <body>
+  </body>
 </html>
 ```
 
@@ -55,14 +55,16 @@ https://cdn.jsdelivr.net/npm/@bakung-ui/minimax.css@latest/
 
 ```
 [MAIN FOLDER]
- ├  css                     // Files in here are editable
- |    ├  _variables.css     // Especially this one       
- |    ├  _styles.css        // You can also edit this, though only to a limited extent
- |    └  index.css          // Entry file to merge _variables.css with _styles.css
- └  dist                    
-      ├  _minimax.min.css   // without _variables.css
-      ├  minimax.css        
-      └  minimax.min.css    // you shall use this for production
+  ├ css                         // Files in here are editable
+  | ├ _styles.css               // You can edit, though only to a limited extent
+  | ├ _variables.css            
+  | └ index.css                 // Entry file to merge css files
+  └ dist                    
+    ├  minimax-lite.min.css           // Without _variables.css
+    ├  minimax-lite.static.min.css    // Without _variables.css
+    ├  minimax.css        
+    ├  minimax.min.css                // You shall use this for production
+    └  minimax.min.static.css         // Without variables
 ```
 
 Feel free to customize files in the css folder especially _variables.css file, after making changes, run command `npm run build` to build your changes, check your new build files in dist folder.

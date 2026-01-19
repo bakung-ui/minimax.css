@@ -30,17 +30,19 @@
   },
   "bugs": "https://github.com/bakung-ui/minimax.css/issues",
   "devDependencies": {
+    "@csstools/postcss-global-data": "^4.0.0",
     "cssnano": "^7.1.2",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
-    "postcss-discard-comments": "^7.0.5",
-    "postcss-import": "^16.1.1"
+    "postcss-custom-properties": "^15.0.0",
+    "postcss-import": "^16.1.1",
+    "postcss-normalize-charset": "^7.0.1"
   },
   "scripts": {
-    "build:_minimaxMinify": "postcss css/_styles.css > dist/_minimax.min.css --use postcss-import --use cssnano --no-map",
-    "build:combine": "postcss css/index.css -o dist/minimax.css --use postcss-import --use cssnano --no-map --env build:combine",
-    "build:minify": "postcss dist/minimax.css > dist/minimax.min.css --no-map",
-    "build": "npm run build:_minimaxMinify && npm run build:combine && npm run build:minify"
+    "build:lite": "npx postcss css/_styles.css -o dist/minimax-lite.min.css --use cssnano --use postcss-normalize-charset --no-map",
+    "build:minimax": "npx postcss css/index.css -o dist/minimax.css --use postcss-import --use cssnano --use postcss-normalize-charset --env noMinimize --no-map && npx postcss dist/minimax.css -o dist/minimax.min.css --no-map",
+    "build": "npm run build:lite && npm run build:minimax",
+    "build:static": "npx postcss dist/minimax-lite.min.css -o dist/minimax-lite.static.min.css --no-map --env buildStatic && npx postcss dist/minimax.css -o dist/minimax.static.min.css --no-map --env buildStatic"
   },
   "engines": {
     "node": ">=v22.16.0",

@@ -1,6 +1,9 @@
+@charset "UTF-8";
 /**
  * 
  * Entry file to merge css files.
+ * 
+ * This file is editable.
  * 
  * // Import the entire package's main file (if defined in package.json style/main fields)
  * @import "my-npm-package";
