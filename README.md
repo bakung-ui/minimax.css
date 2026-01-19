@@ -61,7 +61,6 @@ https://cdn.jsdelivr.net/npm/@bakung-ui/minimax.css@latest/
   | └ index.css                 // Entry file to merge css files
   └ dist                    
     ├  minimax-lite.min.css           // Without _variables.css
-    ├  minimax-lite.static.min.css    // Without _variables.css
     ├  minimax.css        
     ├  minimax.min.css                // You shall use this for production
     └  minimax.min.static.css         // Without variables
