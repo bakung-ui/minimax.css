@@ -41,8 +41,8 @@
   "scripts": {
     "build:lite": "npx postcss css/_styles.css -o dist/minimax-lite.min.css --use cssnano --use postcss-normalize-charset --no-map",
     "build:minimax": "npx postcss css/index.css -o dist/minimax.css --use postcss-import --use cssnano --use postcss-normalize-charset --env noMinimize --no-map && npx postcss dist/minimax.css -o dist/minimax.min.css --no-map",
-    "build": "npm run build:lite && npm run build:minimax",
-    "build:static": "npx postcss dist/minimax-lite.min.css -o dist/minimax-lite.static.min.css --no-map --env buildStatic && npx postcss dist/minimax.css -o dist/minimax.static.min.css --no-map --env buildStatic"
+    "build:static": "npx postcss dist/minimax.css -o dist/minimax.static.min.css --no-map --env buildStatic",
+    "build": "npm run build:lite && npm run build:minimax && build:static"
   },
   "engines": {
     "node": ">=v22.16.0",
