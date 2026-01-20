@@ -49,6 +49,7 @@
   --dialog--height:auto;
   --dialog--width:auto;
 
+  --data-quoter-marker:attr(data-quoter-marker, "\2014 \00A0");
   --blockquote--border-width:0 0 0 4px;
   --blockquote--border-style:solid;
   --blockquote--border-color:var(--border-color-boundary);
@@ -173,7 +174,6 @@
   }
 
   blockquote{
-    --data-quoter-marker:attr(data-quoter-marker, "\2014 \00A0");
     border-color:var(--blockquote--border-color);
     border-style:var(--blockquote--border-style);
     border-width:var(--blockquote--border-width);

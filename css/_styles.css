@@ -78,7 +78,6 @@
   }
 
   blockquote {
-    --data-quoter-marker: attr(data-quoter-marker, "\2014 \00A0");
     border-width: var(--blockquote--border-width);
     border-style: var(--blockquote--border-style);
     border-color: var(--blockquote--border-color);
