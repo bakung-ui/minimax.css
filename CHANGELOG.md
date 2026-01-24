@@ -4,6 +4,14 @@
 
 * Add property scroll-behavior to html element.
 
+* Update h3, h4, h5, h6 line-height property.
+
+* Update h5, h6 letter-spacing property.
+
+* Add ::file-selector-button styles.
+
+* Update th element font-weight.
+
 * Named css/_minimax.css into css/_styles.css.
 
 * Add css/index.css file to act as entry file for merge css files.
@@ -14,7 +22,7 @@
 
 * Update package.json for build scripts and add entry point for unpkg.
 
-* Generate more variations distribution files.
+* Add compiled static files (replaces variable with static value) to distribution files.
 
 ### 26.01.3
 

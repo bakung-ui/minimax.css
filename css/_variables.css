@@ -94,6 +94,7 @@
   
   --backdrop--bg-color: var(--transparent-color);
   
+  --dialog--border: none;
   --dialog--height: auto;
   --dialog--width: auto;
 

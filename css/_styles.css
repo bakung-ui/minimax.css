@@ -52,7 +52,7 @@
     
     margin: 2.5rem 0 1.25rem;
   }
-
+  
   h1 {
     font-size: clamp(2.799rem, calc(2.799rem + 0.125vw), 3.799rem);
   }
@@ -63,21 +63,28 @@
 
   h3 {
     font-size: clamp(1.944rem, calc(1.944rem + 0.125vw), 2.944rem);
+    line-height: 1.125;
   }
 
   h4 {
     font-size: clamp(1.62rem, calc(1.62rem + 0.125vw), 2.62rem);
+    line-height: 1.125;
   }
 
   h5 {
     font-size: clamp(1.35rem, calc(1.35rem + 0.125vw), 2.35rem);
+    line-height: clamp(1em, 1.5em - .75vw, 1.5em);
+    letter-spacing: normal;
   }
 
   h6 {
     font-size: clamp(1.125rem, calc(1.125rem + 0.125vw), 2.125rem);
+    line-height: clamp(1em, 1.5em - .75vw, 1.5em);
+    letter-spacing: normal;
   }
 
   blockquote {
+    --data-quoter-marker: attr(data-quoter-marker, "\2014 \00A0");
     border-width: var(--blockquote--border-width);
     border-style: var(--blockquote--border-style);
     border-color: var(--blockquote--border-color);
@@ -380,6 +387,10 @@
   ::file-selector-button {
     -webkit-appearance: button;
     font: inherit;
+    
+    background-color: var(--btn--background);
+    border: var(--btn--borders-width) var(--btn--border-style) var(--btn--border-color);
+    
     padding: 0.125em 0.25em;
     margin: -1px 0.125em -1px -1px;
   }
@@ -422,6 +433,7 @@
   }
   
   th {
+    font-weight: 500;
     color: var(--font-color-alt-1);
   }
 
@@ -440,7 +452,7 @@
     
     color: inherit;
     background: var(--bg-color);
-    border: none;
+    border: var(--dialog--border);
     opacity: 0;
     
     box-shadow: var(--shadow-float);
@@ -516,7 +528,7 @@
   [type="color"] {
     background: var(--input--bg-color);
   }
-
+  
   [type="checkbox"],
   [type="file"],
   [type="radio"],
