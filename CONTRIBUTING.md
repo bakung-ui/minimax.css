@@ -9,6 +9,16 @@ they should reciprocate that respect in addressing your issue or assessing
 patches and features.
 
 
+## Table of Contents
+
+- [Using the issue tracker](#using-the-issue-tracker)
+- [Bug reports](#bug-reports)
+- [Feature requests](#feature-requests)
+- [Pull requests](#pull-requests)
+- [Maintainers](#maintainers)
+- [Plugin guidelines](#plugin-guidelines)
+
+
 ## Using the issue tracker
 
 The issue tracker is the preferred channel for [bug reports](#bugs),
@@ -195,3 +205,34 @@ result in a new **major** release. No changes to CSS rules can add
 functionality in a backwards-compatible manner, therefore no changes are
 considered **minor**. Others changes with no impact on rendering are considered
 backwards-compatible and will result in a new **patch** release.
+
+Our versioning is based on the year and month. Version 26.1.0 was launched in January 2026; all future releases, including minor updates, will follow this `year/month` format, for ex. `27.3.0` is release in March 2027.
+
+
+## Plugin guidelines
+
+If you intend to create repositories or distribution packages related to minimax.css, please follow the bakung-ui guidelines to ensure discoverability and ease of use for the community.
+
+When naming repositories, we recommend the `{original-repo}-{function}` convention. For instance, a dark mode variant for `minimax.css` should follow the guidelines and be named `minimaxcss-dark-theme`. Always use the original repository name as a prefix without punctuation, like `minimaxcss`.
+
+Adding descriptive tags is highly recommended to improve categorization. We suggest using the `{original-repo}-{plugin-type}` format. The following are the standard repository and distribution package types:
+
+* `variables`: Use this if you are creating an alternative or custom version of `_variable.css`.
+
+* `js`: Similar to the `variables` type, but strictly reserved for JavaScript-related logic and functions.
+
+* `theme`: Unlike the variables type, this provides broader visual variations by modifying `_styles.css`, `_utilities.css`, and others.
+
+* `template`: A comprehensive distribution type that serves as a bundle, combining all the previous distribution types into one.
+
+In accordance with these guidelines, if the distribution type is `theme`, the correct tag identifier would be `minimaxcss-theme`.
+
+As you know, [bakung-ui](https://github.com/bakung-ui) repositories feature various interdependencies, though some can function standalone. We recommend adding the tags `bakungui` and `bakungui-{original-repo}` (e.g., `bakungui-minimaxcss`). Use the first tag to improve general discoverability within the ecosystem, and the second to identify the specific repository you are extending. While you can use just one, applying both ensures your distribution is easily found by others.
+
+```
+[SAMPLE]
+
+Repo: minimaxcss-dark-theme
+Type: theme
+Tags: bakungui, bakungui-minimaxcss, minimaxcss-theme
+```
