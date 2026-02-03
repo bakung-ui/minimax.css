@@ -43,9 +43,9 @@
   --font-size: 16px;
   --line-height: 1.5;
   --font-family: Lato, "Helvetica Neue", sans-serif;
-  --font: var(--font-style) var(--font-variant) var(--font-weight)
+  /* --font: var(--font-style) var(--font-variant) var(--font-weight)
     var(--font-stretch) var(--font-size) / var(--line-height)
-    var(--font-family);
+    var(--font-family); */
   --letter-spacing: 0.06em;
   
   --accent-color: oklch(0.59 0.11 281.84);
@@ -137,7 +137,7 @@
   --btn--font-weight: 400;
   --btn--font-size: var(--font-size);
   --btn--line-height: 1.5;
-  --btn--font: normal var(--btn--font-weight) var(--btn--font-size) / var(--btn--line-height) var(--font-family);
+  /* --btn--font: normal var(--btn--font-weight) var(--btn--font-size) / var(--btn--line-height) var(--font-family); */
   --btn--font-color: var(--font-color);
   --btn--bg-color: var(--bg-color-clickable);
   --btn--paddings: 0.2lh 1.5em;

@@ -404,9 +404,13 @@
     -moz-user-select:none;
     user-select:none;
     vertical-align:middle;
+    :where(&:hover,&:focus):not(:disabled){
+      filter:brightness(103%);
+    }
 
     :where(&:active):not(:disabled){
       box-shadow:none;
+      filter:brightness(105%);
       transform:translateY(1px);
     }
 

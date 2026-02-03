@@ -16,7 +16,9 @@
   }
 
   html {
-    font: var(--font);
+    font: var(--font, var(--font-style) var(--font-variant) var(--font-weight)
+    var(--font-stretch) var(--font-size) / var(--line-height)
+    var(--font-family));
     -webkit-text-size-adjust: 100%;
 
     scroll-behavior: smooth;
@@ -296,7 +298,7 @@
   .btn {
     cursor: pointer;
 
-    font: var(--btn--font);
+    font: var(--btn--font, normal var(--btn--font-weight) var(--btn--font-size) / var(--btn--line-height) var(--font-family));
     line-height: var(--btn--line-height);
     color: var(--btn--font-color,);
 
@@ -326,10 +328,16 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    
+    /* INFO: TEST*/
+    :where(&:hover, &:focus):not(:disabled){
+      filter:brightness(103%);
+    }
 
-    :where(&:active):not(:disabled) {
-      transform: translateY(1px);
-      box-shadow: none;
+    :where(&:active):not(:disabled){
+      box-shadow:none;
+      transform:translateY(1px);
+      filter:brightness(105%);
     }
 
     &:disabled {

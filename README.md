@@ -137,6 +137,12 @@ showing past searches).
 Please read the [contribution guidelines](CONTRIBUTING.md) in order to make the
 contribution process easy and effective for everyone involved.
 
+
+## Plugin guideline
+
+If you intend to create repositories or distribution packages related to minimax.css, please follow the bakung-ui guidelines to ensure discoverability and ease of use for the community, [See the guideline](CONTRIBUTING.md#plugin-guidelines).
+
+
 ## 
 
 [<img width="150" alt="image" src="https://github.com/user-attachments/assets/3f30b3fa-049a-47e0-a288-241f623c7325" />][npm-url] [<img width="150" alt="image" src="https://github.com/user-attachments/assets/66d52d95-465e-4d3e-a0f5-56922755507b" />][classic-yarn-url] 

@@ -5,8 +5,7 @@
   "keywords": [
     "css",
     "css-library",
-    "reset-css",
-    "classless-css"
+    "reset-css"
   ],
   "author": "Tria Warman @triawarman",
   "style": "dist/minimax.min.css",

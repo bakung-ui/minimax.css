@@ -2,6 +2,8 @@
 
 ### 
 
+* Update button, [type="button"], [type="reset"], [type="submit"], and .btn for :active, :focus, and :hover.
+
 * Add property scroll-behavior to html element.
 
 * Update h3, h4, h5, h6 line-height property.
