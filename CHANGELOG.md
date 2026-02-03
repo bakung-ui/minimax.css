@@ -1,6 +1,6 @@
 # Changes to minimax.css
 
-### 
+### v26.2.0
 
 * Update button, [type="button"], [type="reset"], [type="submit"], and .btn for :active, :focus, and :hover.
 
