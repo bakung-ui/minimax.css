@@ -1,11 +1,13 @@
 {
   "name": "@bakung-ui/minimax.css",
-  "description": "A reset CSS library with variables.",
+  "description": "A modern alternative to CSS reset library, with variables",
   "version": "26.2.0",
   "keywords": [
     "css",
     "css-library",
-    "reset-css"
+    "reset-css",
+    "reboot-css",
+    "web-theme"
   ],
   "author": "Tria Warman @triawarman",
   "style": "dist/minimax.min.css",

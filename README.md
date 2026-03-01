@@ -1,6 +1,6 @@
 # minimax.css
 
-> A reset CSS library with variables
+> A modern alternative to CSS reset library, with variables
 
 @bakung-ui/minimax.css is a standalone "Reboot" stylesheet formerly bundled with @bakung-ui/bakung.css. I separated it specifically for simple blogs that don’t need a massive UI kit but still want to make the most of default HTML elements.
 

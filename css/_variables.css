@@ -1,5 +1,5 @@
 :root {
-  /*
+  /*#
   If font is specified as a shorthand for several font-related properties, then:
     - it must include values for:
       <font-size>
@@ -35,41 +35,36 @@
 
   // font-stretch font-variant font-size font-family 
   font: ultra-condensed small-caps 1.2em "Fira Sans", sans-serif;
-  */
+  #*/
   --font-style: normal;
   --font-variant: normal;
-  --font-weight: 300; /* 300 - 400 */
+  --font-weight: 300; /*# 300 - 400 #*/
   --font-stretch: normal;
   --font-size: 16px;
   --line-height: 1.5;
   --font-family: Lato, "Helvetica Neue", sans-serif;
-  /* --font: var(--font-style) var(--font-variant) var(--font-weight)
-    var(--font-stretch) var(--font-size) / var(--line-height)
-    var(--font-family); */
+  /* --font: var(--font-style) var(--font-variant) var(--font-weight) var(--font-stretch) var(--font-size) / var(--line-height) var(--font-family); */
   --letter-spacing: 0.06em;
   
   --accent-color: oklch(0.59 0.11 281.84);
   
-  --font-color: oklch(0.36 0.02 285.26);
   --font-color: oklch(0 0 0);
-  /* h*, pre, optgroup, th */
+  --font-color: oklch(0.23 0.04 280.81);
+  /*# Use for: h*, pre, th #*/
   --font-color-alt-1: oklch(0.44 0.02 284.16);
-  /* blockquote footer */
+  --font-color-alt-1: oklch(0.34 0.02 283.59);
+  /*# Use for: blockquote footer, optgroup #*/
   --font-color-alt-2: oklch(0.6 0.02 285.26);
+  --font-color-alt-2: oklch(0.49 0.02 283.94);
   
-  --bg-color: oklch(0.98 0 0);
-  /* kbd */
-  --bg-color-text-alt-1: oklch(0.36 0.02 285.26);
-  /* --pre--background, --code--background */
-  --bg-color-text: oklch(0.95 0.01 285.37);
-  --bg-color-clickable: oklch(0.96 0.01 285.53);
+  --background-color: oklch(0.98 0 0);
+  /*# Use for: kbd #*/
+  --background-color-text-alt-1: oklch(0.36 0.02 285.26);
+  /*# Use for: --pre--background, --code--background #*/
+  --background-color-text: oklch(0.95 0.01 285.37);
+  --background-color-clickable: oklch(0.96 0.01 285.53);
   
-  /* --btn--border-color */
-  --border-color-control: oklch(0.75 0.02 285.18);
-  /* --blockquote--border-color, --pre--border, --kbd_-kbd--border */
-  --border-color-boundary: oklch(0.82 0.02 285.18);
-  
-  /* shadow, focus */
+  /*# Use for: shadow, focus #*/
   --transparent-color: oklch(from var(--accent-color) l c h / .15);
   
   --href--color: oklch(0.56 0.22 276.32);
@@ -81,76 +76,78 @@
   --focus-outline: 0.25rem solid var(--transparent-color);
   --focus--box-shadow: 0 0 0 0.25rem var(--transparent-color);
   
-  --elements-block-level-space: 1rem;
+  /*# Use for: --btn--border-color #*/
+  --border-color-control: oklch(0.75 0.02 285.18);
   
-  --boundary--border: 1px solid var(--border-color-boundary);
-  
+  --boundary--border-width : 1px;
+  --boundary--border-style : solid;
+  /*# Use for: .dialog, --blockquote--border-color, --pre--border, --kbd_-kbd--border-color #*/
+  /* --boundary--border-color */
+  --boundary--border-color : oklch(0.82 0.02 285.18);
+
   --h--font-family: Montserrat, sans-serif;
-  --h--font-weight: 500; /* 100 - 900 */
+  --h--font-weight: 500; /*# 100 - 900 #*/
   --h--line-height: 1;
   --h--letter-spacing: -0.016em;
-  
   --h--color: var(--font-color-alt-1);
   
-  --backdrop--bg-color: var(--transparent-color);
+  /*# Use for: dt, th #*/
+  --small-header--font-weight: 500;
   
-  --dialog--border: none;
-  --dialog--height: auto;
-  --dialog--width: auto;
+  --backdrop--background: oklch(0.34 0.03 284.04 / 0.9);
+  
+  --dialog--border-color: var(--boundary--border-color);
 
-  --data-quoter-marker: attr(data-quoter-marker, "\2014 \00A0");
+  /* --data-quoter-marker: attr(data-quoter-marker, "\2014 \00A0"); */
   --blockquote--border-width: 0 0 0 4px;
-  --blockquote--border-style: solid;
-  --blockquote--border-color: var(--border-color-boundary);
-  --blockquote_--footer--color: var(--font-color-alt-2);
-  --blockquote_--footer--margin: 1rem 0 0;
+  --blockquote--border-color: var(--boundary--border-color);
+  --blockquote__footer--color: var(--font-color-alt-2);
+  --blockquote__footer--margin: 1rem 0 0;
   
   --pre--color: var(--font-color-alt-1);
-  --pre--background: var(--bg-color-text);
-  --pre--border: var(--boundary--border);
-
-  /*code kbd samp*/
+  --pre--background: var(--background-color-text);
+  /* --pre--border: var(--boundary--border-width) var(--boundary--border-style) var(--boundary--border-color); */
+  
+  /*# Use for: code kbd samp #*/
   --cks--font-family: "Sometype Mono", monospace, monospace;
   --cks--font-size: 1.125rem;
-  --cks--font-weight: 400; /* 400 - 700 */
+  --cks--font-weight: 400; /*# 400 - 700 #*/
 
   --code--color: var(--font-color);
-  --code--background: oklch(from var(--pre--background) .9 c h / .8);
+  --code--background: oklch(from var(--background-color-text) .9 c h / .4);
+  /* --code--background: oklch(from var(--background-color-text) l .12 h / .8); */
 
   --kbd--color: white;
-  --kbd--background: var(--bg-color-text-alt-1);
+  --kbd--background: var(--background-color-text-alt-1);
   --kbd--border-radius: 3px;
   
-  --kbd_-kbd--font-weight: 400;
-  --kbd_-kbd--color: var(--font-color);
-  --kbd_-kbd--border: solid var(--border-color-boundary);
+  --kbd_-kbd--border-style: solid;
+  --kbd_-kbd--border-color: var(--boundary--border-color);
   --kbd_-kbd--border-width: 1px 2px 3px 1px;
   --kbd_-kbd--padding: 0 0.5rem 0.25rem .25rem;
+  
+  --kbd__kbd--font-weight: 400;
+  --kbd__kbd--color: var(--font-color);
 
-  --controls--font-color: var(--font-color);
-  --controls--border: 1px solid var(--border-color-control);
+  --controls--color: var(--font-color);
+  --controls--border-width: 1px; 
+  --controls--border-style: solid; 
+  --controls--border-color: var(--border-color-control);
+  --controls--border-radius: 0.125em;
   --controls--min-height: 1.75rem;
   --controls--padding: 0.125em 0.25em 0.25em;
 
-  --input--bg-color: white;
+  --input--background: white;
   
   --btn--font-weight: 400;
   --btn--font-size: var(--font-size);
   --btn--line-height: 1.5;
   /* --btn--font: normal var(--btn--font-weight) var(--btn--font-size) / var(--btn--line-height) var(--font-family); */
-  --btn--font-color: var(--font-color);
-  --btn--bg-color: var(--bg-color-clickable);
-  --btn--paddings: 0.2lh 1.5em;
-  --btn--paddings: .2lh .75lh .25lh;
-  --btn--borders-width: 1px;
-  --btn--border-style: solid;
-  --btn--border-color: var(--border-color-control);
-  --btn--borders-radius: 0.375em;
-  --btn--borders-radius: 0.25em;
-  --btn--shadow: var(--shadow-clickable);
+  --btn--padding: .2lh .75lh .25lh;
 
-  --moz-input--paddings: 0.125em 0.25em 0.25em;
-  --moz-input--select-paddings: 0.125em 0.25em 0.25em;
-  --moz-btn-paddings: 0.2lh 1.5em;
-  --moz-btn-paddings: .2lh .75lh .25lh;
+  --moz-input--padding: 0.125em 0.25em 0.25em;
+  --moz-input--select-padding: 0.125em 0.25em 0.25em;
+  --moz-btn-padding: .2lh .75lh .25lh;
+  
+  --elements-block-level-space: 1rem;
 }
