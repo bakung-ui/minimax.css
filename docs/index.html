@@ -25,10 +25,48 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@100..900&family=Sometype+Mono:wght@400..700&display=swap" rel="stylesheet">
         
-        <link rel="stylesheet" href="latest/minimax.min.css" />
+        <link rel="stylesheet" href="assets/minimax.min.css" />
     </head>
     <body>
         <div style="max-width: 1200px; margin: 0px auto">
+            <div
+                style="
+                    color: oklch(0.38 0.01 360);
+                    background-color: oklch(0.84 0 0);
+                    padding: 0.5rem !important;
+                    position: sticky;
+                    top: 0;
+                    z-index: 2200;
+                "
+            >
+                <label class="">
+                    <input type="checkbox" class="" name="toggler-dark-theme" />
+                    Dark theme
+                </label>
+                |
+                <span class="prefers-reduced-motion"
+                    >Prefers reduced motion:</span
+                >
+                <span class="prefers-reduced-motion-no-preference"
+                    >no-preference</span
+                >
+                <span class="prefers-reduced-motion-reduce">reduced</span>
+            </div>
+            
+            <div style="display: none;">
+                <div style="height: 2rem; color: white; background-color: var(--accent-color);">
+                    <p style="color: var(--font-color);">
+                        Suis praecipites, imagine quae erat: sanctius iuga ventos locum quin aurea fulgura sic.
+                    </p>
+                </div>
+                
+                <div>
+                    <p style="color: var(--accent-color);">
+                        Suis praecipites, imagine quae erat: sanctius iuga ventos locum quin aurea fulgura sic.
+                    </p>
+                </div>
+                
+            </div>
             <header role="banner">
                 <h1>HTML5 Kitchen Sink</h1>
                 <small
@@ -54,7 +92,8 @@
                         <em>heading content</em> category.
                     </p>
                     <hgroup>
-                        <h1>h1 I am most important.</h1>
+                        <h1>h1 Expect skilled signwriters to use many jazzy,
+                            quaint old alphabets effectively.</h1>
                         <p>
                             Quia ignea minantia aethera ubi coeperunt
                             temperiemque pondus recessit iunctarum umor
@@ -66,7 +105,8 @@
                             circumdare.
                         </p>
 
-                        <h2>h2 Back in my quaint <a href="#">garden</a></h2>
+                        <h2>h2 Expect skilled signwriters to use many jazzy,
+                            quaint old alphabets effectively <a href="#">garden</a></h2>
                         <p>
                             Quia ignea minantia aethera ubi coeperunt
                             temperiemque pondus recessit iunctarum umor
@@ -78,7 +118,8 @@
                             circumdare.
                         </p>
 
-                        <h3>h3 Jaunty vie with flaunting phlox.</h3>
+                        <h3>h3 Expect skilled signwriters to use many jazzy,
+                            quaint old alphabets effectively.</h3>
                         <p>
                             Quia ignea minantia aethera ubi coeperunt
                             temperiemque pondus recessit iunctarum umor
@@ -91,8 +132,8 @@
                         </p>
 
                         <h4>
-                            h4 Five or six big jet planes zoomed quickly by the
-                            new tower.
+                            h4 Expect skilled signwriters to use many jazzy,
+                            quaint old alphabets effectively.
                         </h4>
                         <p>
                             Quia ignea minantia aethera ubi coeperunt
@@ -120,7 +161,8 @@
                             circumdare.
                         </p>
 
-                        <h6>h6 Pack my box with five dozen liquor jugs.</h6>
+                        <h6>h6 Expect skilled signwriters to use many jazzy,
+                            quaint old alphabets effectively.</h6>
                         <p>
                             Quia ignea minantia aethera ubi coeperunt
                             temperiemque pondus recessit iunctarum umor
@@ -711,7 +753,7 @@
                             <label for="checkbox2">and/or check me out</label>
                         </fieldset>
                         <p>
-                            <button type="button" name="button">Button</button>
+                            <button class ="asd"  type="button" name="button">Button</button>
                             <input
                                 type="button"
                                 name="input"
